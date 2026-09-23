@@ -42,21 +42,46 @@
     .publications li {
       margin-bottom: 1em;
     }
+
+    .page-header { display: contents; }
+
+    @media (max-width: 600px) {
+      body { margin: 20px 18px; overflow-wrap: anywhere; }
+      .page-header { display: flex; flex-direction: column; align-items: center; }
+      .page-header h1 { order: 1; margin: 0 0 18px; }
+      .page-header .email-image { order: 2; }
+      .page-header .portrait { order: 3; margin: 20px auto 0; }
+      .portrait {
+        float: none;
+        display: block;
+        width: 180px;
+        max-width: calc(100% - 4px);
+        height: auto;
+        margin: 0 auto 20px;
+      }
+      h1 { font-size: 26px; line-height: 1.25; text-align: center; }
+      .email-image { display: block; max-width: calc(100% - 4px); height: auto; margin: 0 auto; }
+      h3 { font-size: 18px; line-height: 1.7; }
+      .publication-links a { display: inline-block; }
+      .publications { padding-left: 18px; }
+    }
   </style>
 </head>
 <body id="top">
+<header class="page-header">
 <img src="files/me.png" class="portrait" alt="Mohammad Mahmoody">
 
 <h1>Homepage of Mohammad Mahmoody
 </h1>
 <img src="files/em.png" class="email-image" alt="Email address">
+</header>
 
 <br>
 
 
 
 
-<p>  Welcome to my homepage. I am a  computer scientist with interests in cryptography as well as safe AI from a principled point of view.
+<p>Welcome to my homepage. I am a computer scientist with interests in foundations of cryptography as well as trustworthy AI from a principled point of view.
 <br>
 <br>
  
